@@ -22,6 +22,7 @@
 			<url>https://artifacts.itemis.cloud/repository/maven-mps/</url>
 		</repository>
 	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -51,11 +52,11 @@
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>appengine-maven-plugin</artifactId>
 				<version>2.7.0</version>
-				<configuration>
-					<version>1</version>
-					<projectId>GButt_CONFIG</projectId>
-				</configuration>
-			 </plugin>
+			<configuration>
+				<deploy.projectId>augmented-web-414122</deploy.projectId>
+				<deploy.version>1</deploy.version>
+			</configuration>
+			</plugin>
 		</plugins>
 	</build>
 

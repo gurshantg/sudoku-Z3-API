@@ -1,14 +1,11 @@
 package com.gurg.sudoku;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class SudokuContr {
 
-	@CrossOrigin(origins ="http://localhost:3000")
+	@CrossOrigin(origins ="https://sudokudonequick.netlify.app")
 	@PostMapping ("/solveSudoku")
 	public int[][] solveSudoku(@RequestBody int[][] inputGrid) {
 		return Sudoku.solveSudoku(inputGrid);
